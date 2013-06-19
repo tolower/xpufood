@@ -1,0 +1,114 @@
+.indexpage {
+}
+body {
+	font-size:20px;
+	background-color:;
+	
+}
+.header {
+	margin: auto;
+	height: 22%;
+	width: 90%;
+	
+	background-color: #eee;
+}
+.maininfo {
+	height:900px;
+	width: 90%;
+	/*border: thin solid #9F0;*/
+	margin:auto;
+	margin-top:0px;
+	
+}
+.foodinfo {
+	float: left;
+	height:900px;
+	width: 100%;
+  margin-top:10px;
+  margin-left:-301px;
+	/*border: thin solid #F36;*/
+	/*margin: 10px 10px 0px 0px;*/
+	
+}
+.qortinfo {
+	
+	margin-top:10px;
+	margin-bottom:10px;
+	float: right;
+	background-color: #eee;
+	/*height: 95%;*/
+	width: 291px;
+  
+	/*border: thin solid #03F;*/
+}
+.footer {
+	
+	margin: auto;
+	margin-top: 10px;
+	/*height:8%;*/
+	width: 90%;
+	/*border: thin solid #000;*/
+}
+.resfood {
+	margin: 5px;
+	height: 48%;
+	/*border: thin solid #F3C;*/
+}
+.menu1 {
+	background-color: #6CF;
+	height: 40px;
+	width: 100%;
+	margin-top: 18px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	
+	
+}
+.menuitem1 {
+	font-family: "微软雅黑";
+	color: #FFF;
+	float: left;
+	height:88%;
+	width:100px;
+	padding-top:5px;
+	text-align:center;
+	
+}
+.menuitem1:hover{
+	background-color:#000;
+}
+.menuitem1:visited{
+	color: #FFF;
+}
+.inputres {
+  font-size:20px;
+  	height:28px;
+  	width:250px;
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+.search {
+	
+	  font-size:16px;
+	  height:30px;
+	  width:80px;
+  	color: #6cf;
+	background-color:#fff;
+	margin: auto;
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+a:link { 
+	text-decoration: none;
+	color: #6cf;
+}
+
+a:hover { 
+	
+	color: red;
+} 
+
+

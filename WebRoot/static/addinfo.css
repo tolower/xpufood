@@ -1,0 +1,47 @@
+h2 {
+	font-family: "微软雅黑";
+}
+.addrestaurant {
+	font-family: "微软雅黑";
+	font-size: 16px;
+	border-top: thin solid #333;
+	border-buttom:thin solid #fcc;
+}
+.addbtn {
+	
+  font-size:16px;
+  height:28px;
+	background-color:#39f;
+	margin: auto;
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+.inputres {
+  font-size:20px;
+  	height:24px;
+  	width:200px;
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+.restype{
+	font-size:16px;
+	height:24;
+}
+.price {
+	height: 24px;
+	width: 100px;
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+.description {
+	margin-left: 20px;
+  margin-bottom:10px;
+}
+.radius{
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}

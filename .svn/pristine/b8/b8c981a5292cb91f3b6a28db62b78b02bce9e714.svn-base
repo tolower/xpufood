@@ -1,0 +1,38 @@
+.show {
+	margin: auto;
+	padding: 5px;
+	font-family: "微软雅黑";
+	font-size: 16px;
+}
+.showinfo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+.description {
+	
+	margin-left: 20px;
+  margin-bottom:10px;
+}
+.description1 {
+	width:160px;
+  float:left;
+	margin-left: 20px;
+  margin-bottom:10px;
+}
+
+.showtd{
+	width:250px;
+	text-align:center;
+}
+a:link { 
+	text-decoration: none;
+	color: #6cf;
+}
+a:active { 
+	text-decoration:blink;
+}
+a:hover { 
+	text-decoration:underline;
+	color: red;
+} 

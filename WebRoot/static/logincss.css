@@ -1,0 +1,56 @@
+@charset "utf-8";
+.logintable {
+	font-family: "微软雅黑";
+	font-size: 22px;
+	
+	color: #000;
+	vertical-align: top;
+	margin:auto;
+	text-align::center;
+	align:center;
+}
+.login {
+	margin:auto;
+	background-color::#66ccff;
+	text-align::center;
+}
+#loginh3 {
+	text-align:center;
+	font:"微软雅黑";
+	font-size:28px;
+	
+}
+body {
+	background-color: #66ccff;
+}
+.btn {
+	font:"微软雅黑";
+	font-size: 22px;
+	background-color: #3399ff;
+	letter-spacing: 10px;
+	text-align: center;
+	padding-left: 20px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #333;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+	filter: Glow(Color=#000, Strength=55);
+  border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+.inputlogin {
+  border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 6px;
+	text-align: left;
+	height: 28px;
+	width: 70%;
+	font-size:22px;
+	filter: DropShadow(Color=#fff, OffX=5, OffY=10, Positive=1);
+	/*filter: Glow(Color=#000000, Strength=10);*/
+}
