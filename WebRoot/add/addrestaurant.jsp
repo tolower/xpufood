@@ -18,11 +18,15 @@
         餐馆名称：<input class="inputres" name="restaurant_name" /><br>
      </div>
      <div class="description">
-       餐馆类型：<select class="restype" name="restaurant_type">
-                        <option value="临潼校外">临潼校外</option>
-                        <option value="临潼校内">临潼校内</option>
-                        <option value="金花校内">金花校内</option>
-                        <option value="金花校外">金花校外</option>					
+       餐馆地点：<select class="restype" name="restaurant_type">
+                        <option value="临潼东后门">临潼东后门</option>
+                        <option value="临潼校内食堂">临潼校内食堂</option>
+                        <option value="吊庄国际">吊庄国际</option>
+                        <option value="芷阳湖商业街">芷阳湖商业街</option>
+                        <option value="金花校内食堂">金花校内食堂</option> 
+                        <option value="金花校外南门">金花校外南门</option>
+                               <option value="金花校外北门">金花校外北门</option>
+                               <option value="金花校外西门">金花校外西门</option>				
                         </select>
       </div>
       <div class="description">

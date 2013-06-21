@@ -4,27 +4,20 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import food.*;
-import manage.*;
-public class AddFoodServlet extends HttpServlet {
+
+import manage.AddInfo;
+
+public class FoodGradeServlet extends HttpServlet {
 
 	/**
 	 * Constructor of the object.
 	 */
-	public AddFoodServlet() {
+	public FoodGradeServlet() {
 		super();
-	}
-
-	/**
-	 * Destruction of the servlet. <br>
-	 */
-	public void destroy() {
-		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
 	}
 
 	/**
@@ -57,41 +50,28 @@ public class AddFoodServlet extends HttpServlet {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-		
-		
-		Integer res_id=Integer.parseInt(request.getParameter("res_id"));
-		String food_name=request.getParameter("food_name");
-		String food_type=request.getParameter("food_type");
-		Integer food_price=Integer.parseInt(request.getParameter("food_price"));
+		//获取3类打分数据
+		Integer foodTaste=Integer.parseInt(request.getParameter("food_taste"));
+		Integer foodSpeed=Integer.parseInt(request.getParameter("food_speed"));
+		Integer foodPrice=Integer.parseInt(request.getParameter("food_price"));
+		Integer foodId=Integer.parseInt(request.getParameter("food_id"));
+		//out.println(foodTaste+","+foodSpeed+","+foodPrice);
+		Integer grade=(int) (foodTaste*0.4+foodSpeed*0.3+foodPrice*0.3);
 		try{
-			ShowInfo show=new ShowInfo();
-			boolean isFoodNotAdd=show.showFood(res_id, food_name).isEmpty();
-			if(!isFoodNotAdd){
-				//说明重复添加
-				response.sendRedirect("/show/showrestaurant.jsp?res_id="+res_id);
-				return;
-			}else{
-				AddInfo add=new AddInfo();
-				Food food=new Food(res_id,food_name,food_price,food_type);
-				add.addFoodInfo(food);
-				response.sendRedirect("/show/showrestaurant.jsp?res_id="+res_id);
-			}
-			
+			AddInfo add=new AddInfo();
+			add.setFoodLevel(foodId, grade);
+			//设置cookie，记录用户是否已经评分
+			Cookie cookie=new Cookie("food"+foodId,"food"+foodId);
+			cookie.setMaxAge(360*24*60*60);
+			cookie.setPath("/");
+			//写回cookie
+			response.addCookie(cookie);
+			response.sendRedirect("/show/showfood.jsp?food_id="+foodId);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
-		
 		out.flush();
 		out.close();
-	}
-
-	/**
-	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException if an error occurs
-	 */
-	public void init() throws ServletException {
-		// Put your code here
 	}
 
 }
