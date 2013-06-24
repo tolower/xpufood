@@ -6,8 +6,8 @@ public class XPU_Connection {
 	private ResultSet _resultset=null;
 	
 	private static final String _className="com.mysql.jdbc.Driver";
-	private static final String _url="jdbc:mysql://sqld.duapp.com:4050/rFVYfgQlHptAeKQitkrQ?user=4X8AiM2f2hqI7Ad7Y2estV6o&password=kQsZLOl3Tc6ChFd0VtWsRcaTWf6qaRkO";
-	//private static final String _url="jdbc:mysql://localhost:3306/xpufood?user=root&password=sui923874";
+	//private static final String _url="jdbc:mysql://sqld.duapp.com:4050/rFVYfgQlHptAeKQitkrQ?user=4X8AiM2f2hqI7Ad7Y2estV6o&password=kQsZLOl3Tc6ChFd0VtWsRcaTWf6qaRkO";
+	private static final String _url="jdbc:mysql://localhost:3306/xpufood?user=root&password=sui923874";
 	//constructor
 	
 	public XPU_Connection(){

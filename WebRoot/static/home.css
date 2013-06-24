@@ -2,19 +2,19 @@
 }
 body {
 	font-size:20px;
-	background-color:;
+	background-color:#eee;
 	
 }
 .header {
 	margin: auto;
-	height: 22%;
-	width: 90%;
+	height: 170px;
+	width: 1024px;
 	
-	background-color: #eee;
+	background-color: #fff;
 }
 .maininfo {
 	height:900px;
-	width: 90%;
+	width: 1024px;
 	/*border: thin solid #9F0;*/
 	margin:auto;
 	margin-top:0px;
@@ -23,21 +23,21 @@ body {
 .foodinfo {
 	float: left;
 	height:900px;
-	width: 100%;
+	width: 800px;
   margin-top:10px;
-  margin-left:-301px;
+  /*margin-left:-301px;*/
 	/*border: thin solid #F36;*/
 	/*margin: 10px 10px 0px 0px;*/
-	
+	background-color:#fff;
 }
 .qortinfo {
 	
 	margin-top:10px;
 	margin-bottom:10px;
 	float: right;
-	background-color: #eee;
+	background-color: #fff;
 	/*height: 95%;*/
-	width: 291px;
+	width: 214px;
   
 	/*border: thin solid #03F;*/
 }
@@ -46,7 +46,7 @@ body {
 	margin: auto;
 	margin-top: 10px;
 	/*height:8%;*/
-	width: 90%;
+	width: 1024px;
 	/*border: thin solid #000;*/
 }
 .resfood {
@@ -95,6 +95,17 @@ body {
 	  height:30px;
 	  width:80px;
   	color: #6cf;
+	background-color:#fff;
+	margin: auto;
+	border: 1px solid #000;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 5px;
+}
+.search:hover{
+	font-size:16px;
+	  height:30px;
+	  width:80px;
+  	color: #f00;
 	background-color:#fff;
 	margin: auto;
 	border: 1px solid #000;

@@ -7,6 +7,6 @@
 <title></title>
 </head>
 <body>
-	food页面还不知道怎么搞啊～
+	<iframe src="/search/foodsearch.jsp" width="100%" height="600px" scrolling="no" frameborder="1"></iframe>
 </body>
 </html>

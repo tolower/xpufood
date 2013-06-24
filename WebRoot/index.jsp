@@ -22,6 +22,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
     <link rel="stylesheet" type="text/css" href="/static/home.css">
+    <script type="text/javascript">
+    	function search(){
+    		var kw=document.getElementById("kw").value;
+    		if(kw!=""){
+    		window.open("/search/basesearch.jsp?kw="+kw,"iFrame1");
+    		}else{
+    			alert('输入点什么再搜索吧！')
+    		}
+    		
+    	}
+    </script>
   </head>
   
   <body>
@@ -50,14 +61,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	        <a href="/jsp/food.jsp" target="iFrame1"><div class="menuitem1"><span style="color:#fff;">饭菜</span></div></a>
 	        </div>
 	        <div style="float:right;margin-top:5px;margin-right:40px;" >
-	        	<input type="text" class="inputres">
-	        	<input type="submit" class="search" value="搜 索">
+	        	
+	        	<input id="kw" name="kw" type="text" class="inputres">
+	        	<input type="button" onclick="search()" class="search" value="搜 索">
 	        </div>
         </div>    
     </div>
     <div id="mInfo" name="mInfo" class="maininfo">
       <div id="fInfo" name="fInfo" class="foodinfo">
-   		<div style="margin-left:301px;background-color: #eee;">      		
+   		<div>      		
+   			<div style="margin-left:20px">吃货点评网站app下载：<a href="http://pan.baidu.com/share/link?shareid=2228006893&uk=873142674"><span style="color:#f00">吃货点评</span></a>    		
+          
+          <a href="/jsp/restaurant.jsp" target="iFrame1">查看餐馆</a></div>
               <iframe id="iFrame1" name="iFrame1" src="/static/help.html" height="900px" width="100%" scrolling="no" frameborder="0"></iframe>        
         </div>
    	  </div>

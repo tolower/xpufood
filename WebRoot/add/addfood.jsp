@@ -24,7 +24,7 @@
 				<option value="砂锅">砂锅</option>
 				<option value="清真菜">清真菜</option>
 				<option value="甜点">甜点</option>
-				<option value="炒米/面">炒米</option>       			
+				<option value="炒米/面">炒米/面</option>       			
 				<option value="快餐小吃">快餐小吃</option>
 				<option value="川菜">川菜</option>
 				<option value="湘菜">湘菜</option>

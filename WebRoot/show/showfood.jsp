@@ -36,7 +36,7 @@
 							<a href="/servlet/LoveFoodServlet?food_id=<%=food_id %>">我喜欢</a><br>					
 				<%} }%>	
 		
-		<br>
+		
 	</div>
 	
   
@@ -98,7 +98,7 @@
 				</div>
     			<form action="/servlet/FoodGradeServlet" method="post">
 	    			<div class="description">                  
-						综合评分：<%=food.getFoodLevel() %><br></div>				
+						综合评分：<%=food.getFoodLevel() %>分不能再多了<br></div>				
 					<div class="description"> 
 	                  饭菜味道：<input type="number" name="food_taste" value="0" min="0" max="10"/>
 	  				</div>
@@ -115,9 +115,9 @@
 	  						for(Cookie cookie : cookies){
 	  							if(cookie.getName().equals("food"+food_id)){ 
 	  								isGrade=true; %>
-	  								您已经评价啦！	  							
+	  								您已经成功打分啦！	  							
 	  						<%break;}}if(!isGrade){ %>
-	  							<input type="submit" value="打分">
+	  							<input type="submit" value="求打分">
 	  						<%} %>	  					
 	  				</div>
 	  				
@@ -148,7 +148,7 @@
 		<td><b><%=show.showUsers(com.getUsersId()).getUserName() %></b>
 				说：<%=com.getCommentText() %>		
 		</td>
-		<td style="color:#bbb;text-align:right;">
+          <td style="color:#bbb;text-align:right;width:100px">
 			<%=com.getCommentDate() %><br>
 		</td>
 		</tr>

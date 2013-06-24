@@ -16,7 +16,7 @@
 	<table border="0" class="description" >
 		<tr style="background-color:#6cf;">
 			<td class="showtd">餐馆名字</td>
-			<td class="showtd">餐馆类型</td>
+			<td class="showtd">餐馆地点</td>
 			<!-- <td style="width:250px;">餐馆信息</td> -->
 			<td class="showtd">喜欢人数</td>
 		</tr>

@@ -37,7 +37,7 @@
 				<%} }%>			
 		</div> 
 		<div class="description">
-			餐馆类型：<%=res.getRestaurantType() %><br>
+			餐馆地点：<%=res.getRestaurantType() %><br>
 		</div> 
 		<div class="description">
 			详细信息：<%=res.getRestaurantInfo() %><br>

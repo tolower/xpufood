@@ -147,4 +147,14 @@ public class RestaurantDAO {
 			e.printStackTrace();
 		}
 	}
+	public List<Restaurant> searchByName(String name){
+		String sql="select * from restaurant where restaurant_name like '%"+name+"%'";
+		List<Restaurant> list=new ArrayList<Restaurant>();
+		try{
+			list=findByProperty(sql);
+		}catch(Exception e){
+			
+		}
+		return list;
+	}
 }

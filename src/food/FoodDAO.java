@@ -186,4 +186,14 @@ public class FoodDAO {
 			e.printStackTrace();
 		}
 	}
+	public List<Food> searchByName(String name){
+		String sql="select * from food where food_name like '%"+name+"%'";
+		List<Food> list=new ArrayList<Food>();
+		try{
+			list=findByProperty(sql);
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		return list;
+	}
 }
